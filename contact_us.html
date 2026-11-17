@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan's Gallery | Contact Us</title>
+    <meta name="description" content="Dylan's Gallery is a tattoo parlour in
+    Parkhurst where you can make all your tattoo dreams come true with our
+    highly skilled and professional team of artists."/>
+    <meta name="keywords" content=" tattoo, tattoos, fine line, japanese, realism,
+    blackwork, tribal, art, artwork, tattoo shop, tattoo parlour"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="wrapper">
+        <header>
+            <img src="_images/logo.png" alt="Dylan's Gallery Logo" height="150" width="150">
+    
+            <nav id="topNav">
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faq.html">FAQ's</a></li>
+                    <li class="currentPage">Contact Us</li>
+                </ul>      
+            </nav>
+        </header>
+    
+        <main>
+            <h1>Contact Us</h1>
+            <h2>Book an appointment!</h2>
+            <h3>Here you can find all our information</h3>
+            <p>
+                Fill out the form to book an appointment with us. We look forward to seeing you!
+            </p>
+    
+            <form action="malito:dyalnsgallery@gmail.com">
+                <table>
+                    <tr>
+                        <td><label for="myName">Name:</label></td>
+                        <td><input type="text" name="myName" id="myName" value="Your name here" onfocus="this.value=''" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mySurname">Surname:</label></td>
+                        <td><input type="text" name="mySurname" id="mySurname" value="Your surname here" onfocus="this.value=''" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="myEmail">Email:</label></td>
+                        <td><input type="email" name="myEmail" id="myEmail" value="Your email here" onfocus="this.value=''" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="myPhone">Phone Number:</label></td>
+                        <td><input type="tel" name="myPhone" id="myPhone" value="Your phone number here" onfocus="this.value=''" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="appointmentDate">Appointment Date:</label></td>
+                        <td><input type="date" name="appointmentDate" id="appointmentDate" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="appointmentTime">Appointment Time: </label></td>
+                        <td>
+                            <select name="appointmentTime" id="appointmentTime" required>
+                                <option value="">Select Time...</option>
+                                <option value="09:00">09:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">01:00 PM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="15:00">03:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                                <option value="17:00">05:00 PM</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="reset" value="Clear">
+                            <input type="submit" value="Submit" onclick="validateForm()">
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+    
+            <br class=”clearFix”>
+        </main>
+    
+        <footer>
+            <footer>
+                <h3><u> Operating Hours</u></h3>
+                <p>Tuesday - Saturday: 9am - 5pm</p>
+                <p>Sunday and Monday: Closed</p>
+
+                <h3><u>Contact Information</u></h3>
+                <p><b><u>Address:</u></b>19 4th Avenue,<br>Parkhurst,<br>Johannesburg,<br>2193</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2174.451317341966!2d28.01717612139786!3d-26.140764166245134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950b6040f45a79%3A0xee22d55f7df11eeb!2s19%204th%20Ave%2C%20Parkhurst%2C%20Johannesburg%2C%202193!5e0!3m2!1sen!2sza!4v1723730455080!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><b><u>Phone:</u></b><br>+27 62 893 8873</p>
+                <p><b><u>Email:</u></b><br><a href="malito:dylansgallery@gmail.com">dylansgallery@gmail.com</a></p>
+        
+                <b><u>Drop us a follow!</u></b>
+                <p><b>Instagram:</b><br><a href="https://www.instrgram.com/cayd.s" target="_blank">@Dylans.Gallery1402</a></p>
+                <p><b>Pinterest:</b><br><a href="https://pin.it/5fC5rFUg5" target="_blank">@DylansGallery</a></p>
+            
+                <nav id="bottomNav">
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="faq.html">FAQ's</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                
+                <p>&copy; 2024 Dylan's Gallery. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function validateForm() {
+            var validateName = document.getElementById("myName") .value;
+            if (validateName == "Your name here" || validateName == ""){
+                alert("Please enter your name");
+            }
+
+            var validateName = document.getElementById("mySurname") .value;
+            if (validateName == "Your surname here" || validateName == ""){
+                alert("Please enter your surname");
+            }
+
+            var validateEmail = document.getElementById("myEmail").value;
+            if (validateEmail.includes ("@") && validateEmail.includes(".")){}
+            else{alert("Not a valid email address")}
+        }
+    </script>
+    
+</body>
+</html>
